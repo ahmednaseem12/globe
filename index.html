@@ -6,14 +6,11 @@
     <title>Globe Test</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
-    <script type="importmap">
-      {
-        "imports": {
-          "three": "https://unpkg.com/three@0.162.0/build/three.module.js",
-          "three/addons/": "https://unpkg.com/three@0.162.0/examples/jsm/"
-        }
-      }
-    </script>
+    <script type="module">
+  import * as THREE from 'https://unpkg.com/three@0.162.0/build/three.module.js';
+  import { OrbitControls } from 'https://unpkg.com/three@0.162.0/examples/jsm/controls/OrbitControls.js';
+</script>
+
   </head>
 
   <body class="d-flex flex-column min-vh-100">
